@@ -4,7 +4,6 @@ USE PoliticalData;
 
   /* Describe your table here.*/
 CREATE TABLE `committees` (
-  `ID` INT NOT NULL AUTO_INCREMENT,
   `CMTE_ID` varchar(9) NOT NULL,
   `CMTE_NM` varchar(200),
   `TRES_NM` varchar(90),
@@ -18,12 +17,10 @@ CREATE TABLE `committees` (
   `CMTE_FILING_FREQ` varchar(1),
   `ORG_TP` varchar(1),
   `CONNECTED_ORG_NM` varchar(200),
-  `CAND_ID` varchar(9), 
-  PRIMARY KEY (`ID`)
+  `CAND_ID` varchar(9)
 );
 
 CREATE TABLE `cont_to_cand` (
-  `ID` INT NOT NULL AUTO_INCREMENT,
   `CMTE_ID` varchar(9) NOT NULL,
   `AMNDT_IND` varchar(1),
   `RPT_TP` varchar(3),
@@ -45,12 +42,10 @@ CREATE TABLE `cont_to_cand` (
   `FILE_NUM` INT,
   `MEMO_CD` varchar(1),
   `MEMO_TEXT` varchar(100),
-  `SUB_ID` INT,
-  PRIMARY KEY (`ID`)
+  `SUB_ID` INT
 );
 
 CREATE TABLE `candidate`  (
-  `ID` INT NOT NULL AUTO_INCREMENT,
   `CAND_ID` varchar(9),
   `CAND_NAME` varchar(200),
   `CAND_PTY_AFFILIATION` varchar(3),
@@ -65,6 +60,5 @@ CREATE TABLE `candidate`  (
   `CAND_ST2` varchar(34),
   `CAND_CITY` varchar(30),
   `CAND_ST` varchar(2),
-  `CAND_ZIP` varchar(19),
-  PRIMARY KEY (`ID`)
+  `CAND_ZIP` varchar(19)
 );

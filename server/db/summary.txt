@@ -10,6 +10,16 @@ various politiical data APIs. Each document has a dataSetName and data. The
 can be accessed and updated by their dataSetName.
 
 -----------------------------------------------------------------------------
+How to Import txt data into SQL database
+-----------------------------------------------------------------------------
+1. CD to DB folder.
+2. Run 'mysql -u root < schema.sql;' from command line.
+3. Run 'mysql --local-infile=1 -u root PoliticalData;'
+4. Import data with 'LOAD DATA LOCAL INFILE '**path to txt file**' INTO TABLE *tablename* 
+FIELDS TERMINATED BY '|' LINES TERMINATED BY '\n';'
+
+
+-----------------------------------------------------------------------------
 dataSets.js Exported Functions
 -----------------------------------------------------------------------------
 
