@@ -1,6 +1,6 @@
 var morgan = require('morgan');
 var bodyParser = require('body-parser');
-var databaseController = require('./db/databaseController.js');
+var databaseController = require('./db/Mongo/databaseController.js');
 
 module.exports = function(app, express){
 
