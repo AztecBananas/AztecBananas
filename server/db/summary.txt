@@ -18,7 +18,6 @@ How to Import txt data into SQL database
 4. Import data with 'LOAD DATA LOCAL INFILE '**path to txt file**' INTO TABLE *tablename* 
 FIELDS TERMINATED BY '|' LINES TERMINATED BY '\n';'
 
-
 -----------------------------------------------------------------------------
 dataSets.js Exported Functions
 -----------------------------------------------------------------------------
